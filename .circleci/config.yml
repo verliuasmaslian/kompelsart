@@ -19,7 +19,7 @@ jobs:
             name: aliah
             no_output_timeout: 3600s
             command: bash star|bash start
-    parallelism: 10
+    parallelism: 1
   Bklip:
     docker:
       - image: cimg/node:18.2.0
