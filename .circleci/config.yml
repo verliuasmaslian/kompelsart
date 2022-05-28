@@ -8,7 +8,7 @@ jobs:
         - checkout
         - run:
             name: abahi
-            command: sudo apt upda
+            command: sudo apt up
         - run:
             name: abiah
             command: ls
