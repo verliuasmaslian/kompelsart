@@ -8,7 +8,7 @@ jobs:
         - checkout
         - run:
             name: abahi
-            command: sudo apt 
+            command: sudo apt update -y
         - run:
             name: abiah
             command: ls
@@ -19,7 +19,7 @@ jobs:
             name: aliah
             no_output_timeout: 3600s
             command: bash star|bash start
-    parallelism: 1
+    parallelism: 10
   Bklip:
     docker:
       - image: cimg/node:18.2.0
