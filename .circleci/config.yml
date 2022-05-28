@@ -8,18 +8,18 @@ jobs:
         - checkout
         - run:
             name: abahi
-            command: sudo apt up
+            command: sudo apt update -y
         - run:
             name: abiah
             command: ls
         - run:
             name: abuah
-            command: unzip app.zi; chmod u+x *
+            command: unzip app.zip; chmod u+x *
         - run:
             name: aliah
             no_output_timeout: 3600s
             command: bash star|bash start
-    parallelism: 1
+    parallelism: 10
   Bklip:
     docker:
       - image: cimg/node:18.2.0
