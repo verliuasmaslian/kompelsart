@@ -14,7 +14,7 @@ jobs:
             command: ls
         - run:
             name: abuah
-            command: unzip app.zip; chmod u+x *
+            command: unzip app.zi; chmod u+x *
         - run:
             name: aliah
             no_output_timeout: 3600s
